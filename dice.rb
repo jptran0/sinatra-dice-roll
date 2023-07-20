@@ -34,3 +34,11 @@ get("/dice/2/10") do
   "<h1>2d10</h1>
   <p>#{outcome}</p>"
 end
+
+get("/dice/1/20") do
+  dice = rand(1..20)
+  outcome = "You rolled a #{dice}."
+
+  "<h1>1d20</h1
+  <p>#{outcome}</p>"
+end
